@@ -1,0 +1,159 @@
+.card {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  aspect-ratio: 2/4;
+  max-height: 576px;
+}
+
+.card__image {
+  max-width: 400px;
+  width: 100%;
+  height: 272px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  padding: 8px 24px 24px 24px;
+  box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
+  height: 304px;
+}
+
+.card__date {
+  margin: 0;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #d1d2d6;
+}
+
+.card__title {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 26px;
+  color: #1a1b22;
+  height: 90px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Número estimado de líneas para que no pase de 90px */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__paragraph {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px; /* Altura de cada línea */
+  color: #1a1b22;
+
+  height: 80px; /* 4 líneas x 20px = 80px */
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limita a 4 líneas */
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-width: 352px;
+  width: 100%;
+  margin: 0;
+}
+
+.card__autor {
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #d1d2d6;
+  margin: 0;
+  margin-top: 14px;
+}
+
+.card__popup-button {
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  width: 182px;
+  height: 40px;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 500;
+  color: #000000;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.card__popup-search {
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  width: 87px;
+  height: 40px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  margin-right: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  padding: 8px 9px 8px 10px;
+}
+
+.card__popup-button:hover .card__popup-text {
+  opacity: 40%;
+}
+
+.card__popup-text {
+  margin: 0;
+}
+
+.card__button {
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.card__button-icon {
+  width: 24px;
+  height: 24px;
+
+  &:active {
+    transform: scale(1.1);
+  }
+}
+
+.card__button:hover .card__button-icon {
+  opacity: 20%;
+}
+
+.card__container-buttons {
+  position: absolute;
+  display: flex;
+  right: 24px;
+  top: 24px;
+}
+
+.card__container-image {
+  max-height: 272px;
+  height: 100%;
+}

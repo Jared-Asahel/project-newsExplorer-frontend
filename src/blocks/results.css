@@ -1,0 +1,203 @@
+.results {
+  width: 100%;
+  background-color: #f5f6f7;
+  padding: 67px 104px 80px 104px;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.results__title {
+  font-family: "Roboto Slab";
+  font-size: 40px;
+  color: #1a1b22;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.results__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.results__button {
+  display: block;
+  margin: auto;
+  width: 288px;
+  height: 64px;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 45px;
+  font-family: "Roboto";
+  font-size: 18px;
+  color: #1a1b22;
+  margin-top: 60px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.04);
+    background-color: #d6d6d6;
+  }
+
+  &:active {
+    background-color: #cfcfcf;
+  }
+}
+
+.results__not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 21px;
+}
+
+.results__paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  text-align: center;
+
+  color: #b6bcbf;
+}
+
+.results__icon {
+  width: 83px;
+  height: 83px;
+}
+
+.results__title-error {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #1a1b22;
+  margin-top: 31px;
+  margin-bottom: 16px;
+}
+
+.results__paragraph-error {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  text-align: center;
+  color: #b6bcbf;
+  max-width: 356px;
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .results {
+    padding: 60px 80px 70px 80px;
+  }
+
+  .results__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .results {
+    padding: 50px 60px 60px 60px;
+  }
+
+  .results__title {
+    font-size: 36px;
+    margin-bottom: 48px;
+  }
+
+  .results__container {
+    gap: 20px;
+  }
+
+  .results__button {
+    width: 260px;
+    height: 60px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .results {
+    padding: 40px 40px 50px 40px;
+    align-items: center;
+  }
+
+  .results__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .results__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .results__container > * {
+    justify-self: center; /* ✅ esto asegura que cada carta se centre */
+  }
+
+  .results__button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .results {
+    padding: 40px 30px 60px 30px;
+  }
+
+  .results__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .results__container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .results__button {
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .results__paragraph {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 10px;
+  }
+
+  .results__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .results__title-error {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  .results__paragraph-error {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

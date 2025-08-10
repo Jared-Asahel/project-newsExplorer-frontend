@@ -1,0 +1,146 @@
+.about {
+  width: 100%;
+  padding: 80px 104px 80px 104px;
+  box-sizing: border-box;
+}
+
+.about__container {
+  display: flex;
+  gap: 56px;
+}
+
+.about__image {
+  max-width: 464px;
+  width: 100%;
+  max-height: 464px;
+  height: 100%;
+  border-radius: 250px;
+}
+
+.about__title {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+  margin: 51px 0 0 0;
+}
+
+.about__paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  margin: 0;
+}
+
+.about__container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .about {
+    padding: 60px 72px;
+  }
+
+  .about__image {
+    max-width: 340px;
+    max-height: 340px;
+  }
+
+  .about__container {
+    gap: 40px;
+  }
+
+  .about__container-text {
+    max-width: 500px;
+    gap: 20px;
+  }
+
+  .about__title {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about {
+    padding: 50px 48px;
+  }
+
+  .about__image {
+    max-width: 290px;
+    max-height: 290px;
+  }
+
+  .about__container {
+    gap: 36px;
+  }
+
+  .about__container-text {
+    max-width: 460px;
+    gap: 18px;
+  }
+
+  .about__title {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 40px 40px 61px 40px;
+  }
+
+  .about__image {
+    max-width: 232px;
+    max-height: 232px;
+  }
+
+  .about__container {
+    gap: 32px;
+  }
+
+  .about__container-text {
+    max-width: 424px;
+    gap: 16px;
+  }
+
+  .about__title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about {
+    padding: 40px 30px;
+  }
+
+  .about__container {
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .about__image {
+    max-width: 232px;
+    max-height: 232px;
+  }
+
+  .about__container-text {
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 0;
+  }
+}
