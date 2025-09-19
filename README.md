@@ -1,12 +1,50 @@
-# React + Vite
+📰 News Explorer — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web que permite a los usuarios buscar y guardar noticias relevantes, desarrollada como parte del bootcamp de @TripleTenLatam.
 
-Currently, two official plugins are available:
+🚀 Características
+	•	Búsqueda de noticias: Encuentra artículos por palabra clave.
+	•	Autenticación de usuarios: Regístrate y accede a tu cuenta.
+	•	Guardado de artículos: Guarda tus noticias favoritas para leer más tarde.
+	•	Interfaz intuitiva: Diseño limpio y fácil de usar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧰 Tecnologías utilizadas
+	•	Frontend: React, React Router, Vite
+	•	Estilos: CSS, BEM
+	•	Autenticación: JWT (JSON Web Tokens)
+	•	Despliegue: Google Cloud Platform (GCP)
 
-## Expanding the ESLint configuration
+📦 Instalación
+	1.	Clona este repositorio:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone https://github.com/Jared-Asahel/project-newsExplorer-frontend.git
+
+
+2.	Navega al directorio del proyecto:
+
+cd project-newsExplorer-frontend
+
+
+3.	Instala las dependencias:
+
+npm install
+
+
+4.	Inicia el servidor de desarrollo:
+
+npm run dev
+
+
+5.	Abre tu navegador y visita:
+
+http://localhost:5173
+
+
+🔐 Backend
+
+Este frontend está diseñado para integrarse con el backend del proyecto project-newsExplorer-backend. Asegúrate de tener el backend en funcionamiento para una experiencia completa.
+
+
+📝 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
